@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Header from "./components/Header";
 import Form from "./components/Form";
+import TodosApp from "./components/TodosApp";
 import './App.css';
 
 const App = () => {
@@ -18,6 +19,9 @@ const App = () => {
         todos={todos}
         setTodos={setTodos}
         />
+      </div>
+      <div>
+        <TodosApp todos={todos} setTodos={setTodos}/>
       </div>
     </div>
   </div>);
