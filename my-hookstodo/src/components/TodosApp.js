@@ -6,11 +6,11 @@ const TodosApp = ({todos, setTodos}) => {
         
     <div>
         {todos.map((todo)=>(
-            <li className="todo-app" key={todo.id}>
+            <li className="todo-list" key={todo.id}>
                 <input
                 type="text"
                 value={todo.title}
-                className="app"
+                className="list"
                 onChange={(event)=>event.preventDefault()}
                 />
             </li>
